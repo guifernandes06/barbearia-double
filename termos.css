@@ -1,0 +1,190 @@
+[data-custom-class="body"] {
+  background: #f9f9f9 !important;
+  font-family: "Segoe UI", Arial, sans-serif !important;
+  line-height: 1.6 !important;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+[data-custom-class="title"] {
+  font-size: 32px !important;
+  color: #1a1a1a !important;
+  font-weight: bold !important;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+[data-custom-class="subtitle"] {
+  color: #6b7280 !important;
+  font-size: 16px !important;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+[data-custom-class="heading_1"] {
+  font-size: 22px !important;
+  color: #111827 !important;
+  font-weight: 600 !important;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+[data-custom-class="heading_2"] {
+  font-size: 18px !important;
+  color: #1f2937 !important;
+  font-weight: 600 !important;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+[data-custom-class="body_text"] {
+  color: #374151 !important;
+  font-size: 15px !important;
+  margin-bottom: 10px;
+}
+
+[data-custom-class="link"] {
+  color: #2563eb !important;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 15px !important;
+}
+
+
+/* Listas */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+ul ul ul {
+  list-style-type: square;
+}
+
+ol li {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+/* Barra de navegação */
+.navbar {
+  background: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Container da logo */
+.logo-container {
+  flex-grow: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagem da logo */
+.logo {
+  flex-grow: 0.2;
+  height: auto;
+  max-width: 150px;
+}
+
+/* Links de navegação */
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilização dos links na navbar */
+.navbar a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  background: black;
+  color: #c5a352;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Hover nos links */
+.navbar a:hover {
+  background: darkgoldenrod;
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+footer a {
+  color: #333;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+/* Responsividade geral para navbar e conteúdo */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo-container img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+  }
+
+  .navbar .logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+  }
+
+  .navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    display: inline-block;
+    width: auto;
+    padding: 8px 12px;
+  }
+}

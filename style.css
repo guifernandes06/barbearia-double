@@ -1,0 +1,464 @@
+/* geral */
+body {
+  font-family: 'Nunito Sans';
+  background-color: #121212;
+  color: #c5a352;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poppins;
+}
+
+/* Barra de navegação */
+.navbar {
+  background: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Container da logo */
+.logo-container {
+  flex-grow: 0.5;
+  /* Faz com que a logo ocupe mais espaço */
+  display: flex;
+  justify-content: center;
+  /* Centraliza a logo dentro do container */
+  align-items: center;
+}
+
+/* Imagem da logo */
+.logo {
+  flex-grow: 0.2;
+  height: auto;
+  max-width: 150px;
+}
+
+/* Links de navegação */
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilização dos links na navbar */
+.navbar a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  background: black;
+  color: #c5a352;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Efeito ao passar o mouse sobre os links */
+.navbar a:hover {
+  background: darkgoldenrod;
+  color: #ffffff;
+}
+
+/* Conteúdo principal */
+.content {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Container dos botões de links (ex: "Veja mais") */
+.fotos-link {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Agrupamento dos links */
+.fotos-link-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilização dos links de "Veja mais", etc. */
+.fotos-link a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  background: darkgoldenrod;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.fotos-link a:hover {
+  background: black;
+  color: #c5a352;
+}
+
+/* Container da descrição com texto e imagem */
+.description-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Texto da descrição */
+.description {
+  flex: 1;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Imagem ao lado da descrição */
+.description-container img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Lista de serviços */
+.services {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #d4af37; /* dourado */
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+}
+
+.services-grid button {
+  background: #2e2a1f;
+  color: #d4af37;
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: default;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.services-grid button:hover {
+  background: #3a3324;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Centraliza imagens do carrossel */
+.carousel-item img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  margin: 15px auto;
+  display: block;
+}
+
+/* Estilização da área interna do carrossel */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Container das caixas de informações */
+.info-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.box {
+  background: #2e2a1f;
+  /* castanho escuro */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 300px;
+  flex: 1;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #d4af37;
+}
+
+.box p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.box a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.social {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  /* deixa ícones brancos */
+  transition: transform 0.2s;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+  filter: invert(65%) sepia(90%) saturate(500%) hue-rotate(15deg);
+  /* efeito dourado */
+}
+
+/* Container de cortes (imagens e vídeos organizados) */
+.cortes-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Linha de cortes */
+.cortes {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Estilização das imagens de cortes */
+.cortes img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse nas imagens de cortes */
+.cortes img:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Estilização do rodapé */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+footer a {
+  color: #333;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  .cortes img {
+    width: 180px;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  .cortes img {
+    width: 140px;
+  }
+}
+
+/* Estilização dos vídeos de cortes */
+.cortes video {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efeito hover nos vídeos */
+.cortes video:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Responsivo para tablets */
+@media (max-width: 1024px) {
+  .cortes video {
+    width: 180px;
+  }
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+  .cortes video {
+    width: 140px;
+  }
+}
+
+/* Responsividade geral para navbar e conteúdo */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo-container img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+  }
+
+  .navbar .logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+  }
+
+  .navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    display: inline-block;
+    width: auto;
+    padding: 8px 12px;
+  }
+
+  .description-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .services li {
+    width: 100%;
+  }
+
+  iframe {
+    width: 280px;
+    height: 180px;
+  }
+}
+
+/* PRODUTOS.HTML */
+/* Container geral dos produtos */
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Caixa principal que envolve todos os produtos */
+.products-wrapper {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.05
+  ); /* Leve transparência para destaque */
+  padding: 30px 20px;
+  border-radius: 20px;
+  border: 1px solid #c5a352;
+  margin: 0 auto;
+  max-width: 1100px;
+  box-shadow: 0 0 15px rgba(197, 163, 82, 0.1);
+}
+
+/* Caixas individuais de produto */
+.product-box {
+  background: rgba(197, 163, 82, 0.1);
+  border: 1px solid #c5a352;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+.product-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Responsividade extra */
+@media (max-width: 768px) {
+  .product-box {
+    max-width: 100%;
+  }
+}
